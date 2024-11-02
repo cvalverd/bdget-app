@@ -60,8 +60,8 @@ jobs:
             # Descargar la última versión de la imagen
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/my-app-angular:latest
             # Parar y eliminar cualquier contenedor previo
-            docker stop my-app-angular || true && docker rm my-app || true
+            docker stop my-app-angular || true && docker rm my-app-angular || true
             # Iniciar el contenedor
-            docker run -d --name my-app -p 80:80 ${{ secrets.DOCKERHUB_USERNAME }}/my-app-angular:latest
+            docker run -d --name my-app-angular -p 80:80 ${{ secrets.DOCKERHUB_USERNAME }}/my-app-angular:latest
           EOF
   
