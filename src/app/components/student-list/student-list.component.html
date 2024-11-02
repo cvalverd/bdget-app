@@ -1,0 +1,10 @@
+<h2>Lista de Estudiantes</h2>
+<ul>
+    <li *ngFor="let student of students" (click)="onStudentSelected(student)">
+        {{student.id}} ({{student.name}})
+    </li>
+</ul>
+
+<ng-template #noData>
+    <p>No hay datos disponibles.</p>
+</ng-template>
