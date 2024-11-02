@@ -33,7 +33,7 @@ FROM nginx:alpine
 
 # Copiar los archivos estáticos construidos desde el contenedor de construcción anterior
 
-COPY --from=build /app/dist/webjson/browser /usr/share/nginx/html
+COPY --from=build /app/dist/bdget-app/browser /usr/share/nginx/html
 
 # Copiar archivo de configuración de Nginx
 
