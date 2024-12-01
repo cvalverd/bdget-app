@@ -8,7 +8,7 @@ import { Student } from '../models/student';
 })
 export class StudentService {
 
-  private apiUrl = 'http://44.217.66.58:8080/students';
+  private apiUrl = 'http://ip172-18-0-9-csvu6fqim2rg00fi63v0-8080.direct.labs.play-with-docker.com/students';
 
   constructor(private http: HttpClient) { }
   

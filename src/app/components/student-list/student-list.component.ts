@@ -10,8 +10,7 @@ import { NavigationExtras, Router } from '@angular/router';
   standalone: true,
   imports: [HttpClientModule,CommonModule],
   templateUrl: './student-list.component.html',
-  styleUrl: './student-list.component.css',
-  providers:[StudentService]
+  styleUrl: './student-list.component.css'
 })
 export class StudentListComponent {
   students!: Student[];
