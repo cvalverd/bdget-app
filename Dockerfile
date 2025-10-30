@@ -27,7 +27,7 @@ RUN npm run build --prod
 
 # Usar una imagen base de nginx para servir la aplicación
 
-FROM nginx:alpine
+FROM nginx:1.29.3-alpine3.22
 
 
 
